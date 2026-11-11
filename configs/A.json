@@ -1,0 +1,78 @@
+{
+ "trunk_width": 128,
+ "stem_kernel": 15,
+ "dilations": [
+  1,
+  2,
+  4,
+  8,
+  16,
+  32
+ ],
+ "n_filters": 8,
+ "filter_width": 15,
+ "film_blocks": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "protein_width": 128,
+ "n_queries": 4,
+ "esm_dim": 1280,
+ "optimizer": "adamw",
+ "lr": 0.0002,
+ "lr_final": 2e-05,
+ "warmup_frac": 0.05,
+ "weight_decay": 0.01,
+ "grad_clip": 1.0,
+ "precision": "fp32",
+ "batch_positives": 5,
+ "max_updates": 1600,
+ "loss_shares": [
+  1,
+  1,
+  0.5
+ ],
+ "seeds": [
+  17,
+  29,
+  43
+ ],
+ "check_every": 1000000000,
+ "min_gain": 0.001,
+ "patience_updates": 5000,
+ "min_updates": 8500,
+ "lane_weights": {
+  "coord": 1,
+  "interval": 0.5,
+  "sigmoid": 0.1
+ },
+ "label_weights": {
+  "footprint": 1,
+  "method_not_recorded": 0.5,
+  "motif_in_emsa": 0.5,
+  "longer_than_30": 0.5,
+  "prodoric": 0.25
+ },
+ "strength_clip": [
+  0.5,
+  1
+ ],
+ "data_root": "data/derived",
+ "genomes_dir": "data/reference_cache/nuccore",
+ "cache_dir": "data/cache/esm2",
+ "pool_cache": "cache/t34_pools",
+ "ema_decay": 0.999,
+ "smooth_checks": 3,
+ "sampler": "per_step",
+ "example_workers": 0,
+ "diagnostics": "work/tasks/T34/diag_subsample.json",
+ "swap_share": 0.5,
+ "protein_norm": {
+  "side_proteins": 64,
+  "momentum": 0.1,
+  "eps": 1e-05,
+  "w_cov": 0.04
+ }
+}

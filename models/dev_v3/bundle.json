@@ -1,0 +1,109 @@
+{
+ "name": "dev_v3",
+ "made_utc": "2026-11-11T09:38:12Z",
+ "what": "модель разработки ProkaBind: ансамбль из 13 одинаковых сетей (разные случайные начальные значения), обученных на точных сайтах, сайтах PRODORIC, операторах BacRegDB и регулонах RegPrecise; итоговая модель будет обучена после фиксации правил итоговой проверки",
+ "members": [
+  {
+   "name": "R_1",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_2",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_3",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_4",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_5",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_6",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_7",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_8",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_9",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_10",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_11",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_12",
+   "training_updates": 2000
+  },
+  {
+   "name": "R_13",
+   "training_updates": 2000
+  }
+ ],
+ "motif_bank": {
+  "proteins": 6226,
+  "sites": 37209,
+  "sources": "точные сайты (CollecTF, RegulonDB), PRODORIC, BacRegDB, библиотека SigmoID, RegPrecise",
+  "terms": "данные источников лежат здесь для закрытого некоммерческого показа и дальше не раздаются"
+ },
+ "not_trained_on": "белки проверочного блока 0, контрольной части и отложенного набора и белки, родственные им на 40% и больше (из внешних источников); 99 белков BacRegDB, отложенных для измерений при разработке",
+ "sha256": {
+  "site_bank.pkl": "66736d6b29f08fb5ee7e02a9e96085e40b553c9e928ae0a6a296ae7b72eff9c4",
+  "train_proteins.fasta": "d4f1bcb07b217a3fd27b112ffe3aebd938e525d98ce96ca7c5462e4855a77ddc",
+  "members/R_4/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_4/journal.json": "3f9c870c83a611f47be38ddad1c08e8a716cce3e1f1b8bd94914650cf20efcbb",
+  "members/R_4/model.pt": "1671225537fbf48fadf97a05683b2fcebc674ff690d59e07e45756ea63eb1b21",
+  "members/R_1/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_1/journal.json": "142d0e680914ecf9453d750b41cc6f1f5b94d694ff0de857dc9292d75c6d1d83",
+  "members/R_1/model.pt": "42032856b0d40924df61095f1903b53d25217f72bd17270ae3a287876f4db5c8",
+  "members/R_6/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_6/journal.json": "0c09a9bd9ae0d6b1fc2fa65ac41b219a030f3d0a96cc4a8f833a00c518ff90f8",
+  "members/R_6/model.pt": "47d6551b0c9827e8e08906c18d6d522be60422f87ecd1ac245af728a2f3b02c9",
+  "members/R_8/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_8/journal.json": "a31a233132a7ce8ec25ede602498158bca68cfa2ece1952a586def9335595c5a",
+  "members/R_8/model.pt": "3dd6b1635bc36797704944e3440aa834caf4643f6eb86ba2f73fb675a852edcc",
+  "members/R_9/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_9/journal.json": "af1ffff32b20438f0ec955723fc218ce8e28f85a6649e6f98a08c78204b19fb9",
+  "members/R_9/model.pt": "ac5b93d15f4fef0240380b08da10194e7fb84a442ad34b9873e24ed4f95d4b59",
+  "members/R_10/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_10/journal.json": "d9b0524f600a0a6a2e27c182395f5ad93f651305465f2ca256ba2d6cc832d5b4",
+  "members/R_10/model.pt": "6a5ddff21a9a73c634b61a82df00d69131e9e8cbe852d048fd6c7d70b7001269",
+  "members/R_2/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_2/journal.json": "19cd55196ad11c03bac529c5f8cf867a4fb7da307bd65d1671117753ef157373",
+  "members/R_2/model.pt": "d400137e60e095f425378fc26c58b2dcc10fd14b8f016100f81a4792de487011",
+  "members/R_11/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_11/journal.json": "eb73f96dd5c9c84d1ba6077ce79083fb6ee24aa09816e2683d3cb54a546a1460",
+  "members/R_11/model.pt": "ca1922b28ff22305db7cdafd60f1cb7f413dbfdaacdb1c0786aa434ae5ff0093",
+  "members/R_5/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_5/journal.json": "1e4a28225df6ca0ebe59f47b5b3ca98b789f46aa8a805c9810f1753fecdcac42",
+  "members/R_5/model.pt": "94ee90846fa35126da066a08bedde28e54f2d9870da36a8498e4a4f0b01fd1c2",
+  "members/R_12/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_12/journal.json": "3891d3b194ee87ab00153ab2ecd298a6e6c9aa8e33e8dac1c10017c9d2d164d9",
+  "members/R_12/model.pt": "ce2ba39de8f65b15a09ae5cd48c44e3da81f3388351d577b3a688db4f7ca122f",
+  "members/R_7/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_7/journal.json": "db570543ce65a10350dee83bad01eee12e939b67914c0828f615af93c57c2f4b",
+  "members/R_7/model.pt": "9278fa1bade4a4d22d083260590d3bc43f5d7d725e5a1e14dfd3a918a303c29a",
+  "members/R_13/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_13/journal.json": "9d794a46b8de229c46ee68c91d50606c246b16fd187fa51dd909dceee2de7da9",
+  "members/R_13/model.pt": "974ad15044fce9566e265903241b0e6953584071bbce1e5370525fa794f0423f",
+  "members/R_3/config.json": "1fe3572f5226ec49475a0f39ab47479951248bb66b5add22d67312484b532eb1",
+  "members/R_3/journal.json": "657fed6fd9b9a85407d5d282c8b1a94b0017134257d4119534f3efe76c1fa097",
+  "members/R_3/model.pt": "5079ee8ac39e1b9b603218fb615fb20af4dbd533bd17a0d2c668ea40913e4467"
+ }
+}

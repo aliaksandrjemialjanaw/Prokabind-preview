@@ -1,0 +1,3 @@
+numpy>=1.26
+fair-esm==2.0.0
+# torch ставится отдельно (см. README): pip install torch --index-url https://download.pytorch.org/whl/cpu

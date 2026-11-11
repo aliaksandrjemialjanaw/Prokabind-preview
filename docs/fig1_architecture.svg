@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1350" width="1240" height="1350" font-family="DejaVu Sans, Arial, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3a3f4b"/></marker><marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c8641a"/></marker></defs>
+<rect width="1240" height="1350" fill="#ffffff"/>
+<text x="620" y="44" text-anchor="middle" font-size="25" font-weight="bold" font-style="normal" fill="#1f2430">Рис. 1. Архитектура модели ProkaBind</text>
+<text x="620" y="74" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#555b68">схема читается снизу вверх: от последовательностей белка и ДНК к оценке связывания</text>
+<g transform="translate(0,-150)">
+<text x="275" y="1478" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Аминокислотная последовательность белка (L остатков)</text>
+<rect x="73" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="88" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">M</text>
+<rect x="107" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="122" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">K</text>
+<rect x="141" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="156" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">S</text>
+<rect x="175" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="190" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">A</text>
+<rect x="209" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="224" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">T</text>
+<rect x="243" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="258" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">S</text>
+<rect x="277" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="292" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">A</text>
+<rect x="311" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="326" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Q</text>
+<rect x="345" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="360" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">R</text>
+<rect x="379" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="394" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">P</text>
+<rect x="413" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="428" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Y</text>
+<rect x="447" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#d9822b" stroke-width="1.2"/>
+<text x="462" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">…</text>
+<line x1="275" y1="1410" x2="275" y2="1378" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="50" y="1024" width="450" height="352" rx="10" fill="#e9ecf2" stroke="#7d8799" stroke-width="1.6"/>
+<text x="275" y="1052" text-anchor="middle" font-size="17" font-weight="bold" font-style="normal" fill="#1f2430">ESM-2 (650M), белковая языковая модель</text>
+<text x="275" y="1074" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#555b68">веса заморожены</text>
+<rect x="72" y="1326" width="338" height="38" rx="5" fill="#cdd4e1" stroke="#7d8799" stroke-width="1.1"/>
+<text x="241" y="1350.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">эмбеддинг токенов</text>
+<rect x="72" y="1278" width="338" height="38" rx="5" fill="#cdd4e1" stroke="#7d8799" stroke-width="1.1"/>
+<text x="241" y="1302.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">слой 1: self-attention + feed-forward</text>
+<rect x="72" y="1230" width="338" height="38" rx="5" fill="#cdd4e1" stroke="#7d8799" stroke-width="1.1"/>
+<text x="241" y="1254.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">слой 2</text>
+<rect x="72" y="1142" width="338" height="38" rx="5" fill="#cdd4e1" stroke="#7d8799" stroke-width="1.1"/>
+<text x="241" y="1166.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">слой 32</text>
+<rect x="72" y="1094" width="338" height="38" rx="5" fill="#cdd4e1" stroke="#7d8799" stroke-width="1.1"/>
+<text x="241" y="1118.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">слой 33</text>
+<text x="241" y="1212" text-anchor="middle" font-size="22" font-weight="normal" font-style="normal" fill="#1f2430">⋮</text>
+<path d="M426,1094 h12 v222 h-12" fill="none" stroke="#7d8799" stroke-width="1.6"/>
+<text x="460" y="1200" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430" transform="rotate(-90 460 1200)">33 слоя</text>
+<text x="480" y="1200" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430" transform="rotate(-90 480 1200)">Transformer</text>
+<line x1="275" y1="1024" x2="275" y2="990" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="289" y="1012" text-anchor="start" font-size="15" font-weight="normal" font-style="italic" fill="#555b68">эмбеддинги остатков: L × 1280</text>
+<rect x="50" y="932" width="450" height="56" rx="8" fill="#fde6c8" stroke="#d9822b" stroke-width="1.6"/>
+<text x="275" y="965.95" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">Linear 1280 → 128 · LayerNorm · GELU</text>
+<line x1="275" y1="932" x2="275" y2="906" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="50" y="848" width="450" height="56" rx="8" fill="#fde6c8" stroke="#d9822b" stroke-width="1.6"/>
+<text x="275" y="881.95" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">Остаточный MLP-блок (128 → 256 → 128)</text>
+<line x1="275" y1="848" x2="275" y2="822" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="50" y="744" width="450" height="76" rx="8" fill="#fde6c8" stroke="#d9822b" stroke-width="1.6"/>
+<text x="275" y="776.9" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">Attention pooling: 4 обучаемых запроса</text>
+<text x="275" y="799" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">+ среднее по остаткам  →  5 × 128</text>
+<line x1="275" y1="744" x2="275" y2="718" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="50" y="660" width="450" height="56" rx="8" fill="#fde6c8" stroke="#d9822b" stroke-width="1.6"/>
+<text x="275" y="693.95" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">Linear 640 → 128 · стандартизация</text>
+<line x1="275" y1="660" x2="275" y2="634" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="110" y="576" width="330" height="56" rx="28" fill="#f4a340" stroke="#c8641a" stroke-width="2"/>
+<text x="275" y="610.65" text-anchor="middle" font-size="19" font-weight="bold" font-style="normal" fill="#1f2430">Вектор белка  v ∈ ℝ¹²⁸</text>
+<text x="965" y="1478" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Фрагмент ДНК, one-hot-кодирование (4 × N)</text>
+<rect x="746" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="761" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">A</text>
+<rect x="780" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="795" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">C</text>
+<rect x="814" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="829" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">G</text>
+<rect x="848" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="863" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">T</text>
+<rect x="882" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="897" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">T</text>
+<rect x="916" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="931" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">G</text>
+<rect x="950" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="965" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">A</text>
+<rect x="984" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="999" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">C</text>
+<rect x="1018" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="1033" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">A</text>
+<rect x="1052" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="1067" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">G</text>
+<rect x="1086" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="1101" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">C</text>
+<rect x="1120" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="1135" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">T</text>
+<rect x="1154" y="1414" width="30" height="30" rx="4" fill="#ffffff" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="1169" y="1434.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">…</text>
+<line x1="847.5" y1="1410" x2="847.5" y2="1378" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="1082.5" y1="1410" x2="1082.5" y2="1378" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="740" y="1300" width="215" height="76" rx="8" fill="#ffeeda" stroke="#c8641a" stroke-width="2"/>
+<text x="847.5" y="1333.2" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">8 фильтров, k = 15,</text>
+<text x="847.5" y="1354" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">веса вычислены по v</text>
+<rect x="975" y="1300" width="215" height="76" rx="8" fill="#dbeaf9" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="1082.5" y="1333.2" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Conv1d, k = 15:</text>
+<text x="1082.5" y="1354" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">128 общих фильтров</text>
+<line x1="847.5" y1="1300" x2="847.5" y2="1272" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="1082.5" y1="1300" x2="1082.5" y2="1272" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="740" y="1214" width="450" height="56" rx="8" fill="#dbeaf9" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="965" y="1247.6" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Конкатенация (136) → Conv 1×1 → 128 каналов</text>
+<line x1="965" y1="1214" x2="965" y2="1188" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="740" y="766" width="450" height="420" rx="10" fill="#eef5fc" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="965" y="792" text-anchor="middle" font-size="16" font-weight="bold" font-style="normal" fill="#1f2430">6 остаточных блоков, расширенные свёртки</text>
+<rect x="756" y="1124" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="965" y="1154" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 1: Conv, k = 3, dilation = 1</text>
+<rect x="756" y="1064" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<text x="965" y="1094" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 2: Conv, k = 3, dilation = 2</text>
+<rect x="756" y="1004" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<rect x="756" y="1004" width="74" height="48" rx="6" fill="#ffd9a8" stroke="#c8641a" stroke-width="1.6"/>
+<text x="793" y="1033.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">FiLM</text>
+<text x="1002" y="1034" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 3: Conv, k = 3, dilation = 4</text>
+<rect x="756" y="944" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<rect x="756" y="944" width="74" height="48" rx="6" fill="#ffd9a8" stroke="#c8641a" stroke-width="1.6"/>
+<text x="793" y="973.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">FiLM</text>
+<text x="1002" y="974" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 4: Conv, k = 3, dilation = 8</text>
+<rect x="756" y="884" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<rect x="756" y="884" width="74" height="48" rx="6" fill="#ffd9a8" stroke="#c8641a" stroke-width="1.6"/>
+<text x="793" y="913.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">FiLM</text>
+<text x="1002" y="914" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 5: Conv, k = 3, dilation = 16</text>
+<rect x="756" y="824" width="418" height="48" rx="6" fill="#a9cdf0" stroke="#3f7fbf" stroke-width="1.2"/>
+<rect x="756" y="824" width="74" height="48" rx="6" fill="#ffd9a8" stroke="#c8641a" stroke-width="1.6"/>
+<text x="793" y="853.25" text-anchor="middle" font-size="15" font-weight="normal" font-style="normal" fill="#1f2430">FiLM</text>
+<text x="1002" y="854" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">блок 6: Conv, k = 3, dilation = 32</text>
+<line x1="965" y1="766" x2="965" y2="740" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="979" y="760" text-anchor="start" font-size="15" font-weight="normal" font-style="italic" fill="#555b68">поле зрения позиции: 141 п. н.</text>
+<rect x="740" y="682" width="450" height="56" rx="8" fill="#dbeaf9" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="965" y="715.95" text-anchor="middle" font-size="17" font-weight="normal" font-style="normal" fill="#1f2430">LayerNorm → Linear 128 → 1</text>
+<line x1="965" y1="682" x2="965" y2="656" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="740" y="580" width="450" height="74" rx="8" fill="#dbeaf9" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="965" y="612.2" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">Усреднение по двум цепям ДНК:</text>
+<text x="965" y="633" text-anchor="middle" font-size="16" font-weight="normal" font-style="normal" fill="#1f2430">s = ½ [ f(x) + f(x̄) ],  x̄: обратный комплемент</text>
+<line x1="965" y1="580" x2="965" y2="554" stroke="#3a3f4b" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="760" y="494" width="410" height="58" rx="29" fill="#2f6fb3" stroke="#1d4e85" stroke-width="2"/>
+<text x="965" y="529.125" text-anchor="middle" font-size="17.5" font-weight="bold" font-style="normal" fill="#ffffff">Оценка связывания s(i) в каждой позиции i</text>
+<line x1="440" y1="604" x2="624" y2="604" stroke="#c8641a" stroke-width="2.4" stroke-dasharray="7 5"/>
+<line x1="624" y1="604" x2="624" y2="1338" stroke="#c8641a" stroke-width="2.4" stroke-dasharray="7 5"/>
+<line x1="624" y1="1338" x2="738" y2="1338" stroke="#c8641a" stroke-width="2.4" marker-end="url(#ao)" stroke-dasharray="7 5"/>
+<line x1="624" y1="1028" x2="754" y2="1028" stroke="#c8641a" stroke-width="2.4" marker-end="url(#ao)" stroke-dasharray="7 5"/>
+<line x1="624" y1="968" x2="754" y2="968" stroke="#c8641a" stroke-width="2.4" marker-end="url(#ao)" stroke-dasharray="7 5"/>
+<line x1="624" y1="908" x2="754" y2="908" stroke="#c8641a" stroke-width="2.4" marker-end="url(#ao)" stroke-dasharray="7 5"/>
+<line x1="624" y1="848" x2="754" y2="848" stroke="#c8641a" stroke-width="2.4" marker-end="url(#ao)" stroke-dasharray="7 5"/>
+<text x="612" y="1090" text-anchor="middle" font-size="15.5" font-weight="normal" font-style="normal" fill="#c8641a" transform="rotate(-90 612 1090)">информация о белке → ДНК-часть</text>
+<text x="684" y="1328" text-anchor="middle" font-size="14.5" font-weight="normal" font-style="normal" fill="#c8641a">гиперсеть</text>
+<text x="684" y="838" text-anchor="middle" font-size="15" font-weight="normal" font-style="italic" fill="#c8641a">γ, β</text>
+</g>
+<rect x="50" y="100" width="1140" height="208" rx="10" fill="#fafbfc" stroke="#c5cad3" stroke-width="1.2"/>
+<rect x="70" y="122" width="34" height="24" rx="4" fill="#e9ecf2" stroke="#7d8799" stroke-width="1.6"/>
+<text x="116" y="140" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">заморожено: ESM-2, 650 млн параметров</text>
+<rect x="70" y="158" width="34" height="24" rx="4" fill="#fde6c8" stroke="#d9822b" stroke-width="1.6"/>
+<text x="116" y="176" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">обучается: белковая часть</text>
+<rect x="70" y="194" width="34" height="24" rx="4" fill="#dbeaf9" stroke="#3f7fbf" stroke-width="1.6"/>
+<text x="116" y="212" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">обучается: ДНК-часть</text>
+<text x="70" y="250" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">Обучаемых параметров около 1 млн</text>
+<text x="70" y="272" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">на одну модель; в ансамбле 13 моделей.</text>
+<line x1="500" y1="134" x2="534" y2="134" stroke="#c8641a" stroke-width="2.4" stroke-dasharray="7 5"/>
+<text x="546" y="139" text-anchor="start" font-size="15.5" font-weight="bold" font-style="normal" fill="#1f2430">Вектор белка v передаётся в ДНК-часть двумя способами:</text>
+<text x="500" y="172" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">1) гиперсеть: линейный слой вычисляет по v веса 8 свёрточных фильтров</text>
+<text x="524" y="194" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">первого слоя: собственные детекторы мотива для каждого белка;</text>
+<text x="500" y="228" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">2) FiLM в блоках 3–6:  h ← h · (1 + γ(v)) + β(v), где γ и β линейно</text>
+<text x="524" y="250" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">зависят от v: белок усиливает или подавляет каналы свёрточной сети</text>
+<text x="524" y="272" text-anchor="start" font-size="15.5" font-weight="normal" font-style="normal" fill="#1f2430">(feature-wise linear modulation).</text>
+</svg>
